@@ -19,7 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\CopyX\CopyX.csproj" />
+    <ProjectReference Include="..\src\CopyX.csproj" />
   </ItemGroup>
 
 </Project>

@@ -117,7 +117,7 @@ dotnet test
 Run the CLI from source:
 
 ```powershell
-dotnet run --project src/CopyX -- <source> <destination>
+dotnet run --project src -- <source> <destination>
 ```
 
 ## Local Tool Package
@@ -125,7 +125,7 @@ dotnet run --project src/CopyX -- <source> <destination>
 CopyX is configured as a .NET tool package. To pack and install it from a local package output folder:
 
 ```powershell
-dotnet pack src/CopyX
+dotnet pack src
 dotnet tool install --global --add-source <package-output-folder> CopyX
 ```
 
