@@ -120,6 +120,14 @@ Run the CLI from source:
 dotnet run --project src -- <source> <destination>
 ```
 
+## Chocolatey
+
+Install CopyX with Chocolatey:
+
+```powershell
+choco install copyx --version=1.0.0
+```
+
 ## Local Tool Package
 
 CopyX is configured as a .NET tool package. To pack and install it from a local package output folder:
@@ -134,3 +142,7 @@ After installation, run it with:
 ```powershell
 copyx <source> <destination>
 ```
+
+## License
+
+CopyX is licensed under the GNU Affero General Public License v3.0 only.

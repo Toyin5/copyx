@@ -8,9 +8,13 @@
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>copyx</ToolCommandName>
     <PackageId>CopyX</PackageId>
-    <Version>0.1.0</Version>
-    <Authors>CopyX</Authors>
+    <Version>1.0.0</Version>
+    <Authors>Toyin</Authors>
     <Description>A terminal file and directory copy utility with progress visibility.</Description>
+    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/Toyin5/copyx</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Toyin5/copyx</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PackageTags>copy;cli;tool;filesystem</PackageTags>
   </PropertyGroup>
 

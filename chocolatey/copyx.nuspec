@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>copyx</id>
+    <version>__VERSION__</version>
+    <title>CopyX</title>
+    <authors>Toyin</authors>
+    <owners>Toyin</owners>
+    <projectUrl>https://github.com/Toyin5/copyx</projectUrl>
+    <packageSourceUrl>https://github.com/Toyin5/copyx</packageSourceUrl>
+    <summary>A terminal file and directory copy utility with progress visibility.</summary>
+    <description>
+CopyX is a terminal file and directory copy utility with progress visibility, practical metrics, and readable terminal output.
+
+It supports single-file copies, recursive directory copies, dry runs, overwrite or skip-existing modes, verbose output, cancellation, and completion summaries.
+    </description>
+    <tags>copyx copy cli filesystem terminal</tags>
+    <licenseUrl>https://www.gnu.org/licenses/agpl-3.0.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
