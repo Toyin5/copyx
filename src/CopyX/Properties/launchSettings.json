@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "CopyX": {
+      "commandName": "Project",
+      "commandLineArgs": "\"./lab/src/test.cs\" \"./lab/dest\""
+    }
+  }
+}

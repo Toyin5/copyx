@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>copyx</ToolCommandName>
+    <PackageId>CopyX</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>CopyX</Authors>
+    <Description>A terminal file and directory copy utility with progress visibility.</Description>
+    <PackageTags>copy;cli;tool;filesystem</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Spectre.Console" Version="0.57.0" />
+  </ItemGroup>
+
+</Project>
