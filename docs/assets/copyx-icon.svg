@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-labelledby="title desc">
+  <title id="title">CopyX icon</title>
+  <desc id="desc">Two overlapping document shapes with a CopyX mark.</desc>
+  <defs>
+    <linearGradient id="background" x1="18" y1="12" x2="112" y2="118" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12263f"/>
+      <stop offset="1" stop-color="#07111f"/>
+    </linearGradient>
+    <linearGradient id="page" x1="24" y1="43" x2="88" y2="111" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#65f5c2"/>
+      <stop offset="1" stop-color="#23a982"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="22" fill="url(#background)"/>
+  <rect x="1" y="1" width="126" height="126" rx="21" fill="none" stroke="#73fbd3" stroke-opacity=".3" stroke-width="2"/>
+  <path d="M35 30h44l18 18v50H35z" fill="#eaf3f8"/>
+  <path d="M79 30v18h18z" fill="#a9bbc9"/>
+  <path d="M24 43h44l18 18v50H24z" fill="url(#page)"/>
+  <path d="M68 43v18h18z" fill="#168b6b"/>
+  <path d="M44 78 32 62h13l6 8 6-8h13L58 78l13 18H58l-7-10-7 10H31z" fill="#06111e"/>
+</svg>
