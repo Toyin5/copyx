@@ -6,6 +6,12 @@ The classic `cp` command is dependable, but it can also be painfully quiet. You 
 
 CopyX keeps the familiar job simple: copy this source to that destination. The difference is that it plans to make the work observable and reassuring, with progress tracking, file counts, total size, duration, average speed, skipped and failed file counts, and readable terminal output.
 
+## Demo
+
+https://github.com/user-attachments/assets/c20d5626-ae0b-4d6c-8673-a09e11564174
+
+
+
 ## Features
 
 - Copy a single file to a file or directory destination.
