@@ -29,6 +29,7 @@ $templatePath = Join-Path $repoRoot "chocolatey\copyx.nuspec"
 $artifactRoot = Join-Path $repoRoot "artifacts\chocolatey"
 $toolsDir = Join-Path $artifactRoot "tools"
 $nuspecPath = Join-Path $artifactRoot "copyx.nuspec"
+$licensePath = Join-Path $repoRoot "LICENSE"
 
 if ([string]::IsNullOrWhiteSpace($Version)) {
     [xml]$project = Get-Content -Path $projectPath
@@ -64,6 +65,31 @@ Invoke-Native dotnet publish $projectPath `
     /p:DebugType=None `
     /p:DebugSymbols=false `
     /p:Version=$Version
+
+Copy-Item -Path $licensePath -Destination (Join-Path $toolsDir "LICENSE.txt") -Force
+
+$exePath = Join-Path $toolsDir "CopyX.exe"
+$exeHash = (Get-FileHash -Path $exePath -Algorithm SHA256).Hash.ToLowerInvariant()
+$verification = @"
+VERIFICATION
+
+This package embeds CopyX.exe because CopyX is published as a self-contained
+single-file .NET command line application for $Runtime.
+
+Source repository:
+https://github.com/Toyin5/copyx
+
+Package build command:
+scripts/package-chocolatey.ps1 -Version $Version -Runtime $Runtime -Configuration $Configuration
+
+The executable was produced from the project source with dotnet publish during
+package creation and placed in the Chocolatey tools directory.
+
+tools/CopyX.exe SHA256:
+$exeHash
+"@
+
+Set-Content -Path (Join-Path $toolsDir "VERIFICATION.txt") -Value $verification -Encoding UTF8
 
 $nuspec = Get-Content -Path $templatePath -Raw
 $nuspec = $nuspec.Replace("__VERSION__", $Version)

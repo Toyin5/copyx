@@ -128,6 +128,20 @@ Install CopyX with Chocolatey:
 choco install copyx --version=1.0.0
 ```
 
+## Homebrew
+
+CopyX includes a Homebrew formula template and generator for tap packaging.
+
+Generate a formula for a tagged release:
+
+```powershell
+.\scripts\package-homebrew.ps1 -Version 1.0.0
+```
+
+The completed formula is written to `artifacts\homebrew\copyx.rb`. Copy it into
+your tap, then run `brew audit`, `brew install --build-from-source`, and
+`brew test`.
+
 ## Local Tool Package
 
 CopyX is configured as a .NET tool package. To pack and install it from a local package output folder:

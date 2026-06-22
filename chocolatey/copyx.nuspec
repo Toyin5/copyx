@@ -8,6 +8,8 @@
     <owners>Toyin</owners>
     <projectUrl>https://github.com/Toyin5/copyx</projectUrl>
     <packageSourceUrl>https://github.com/Toyin5/copyx</packageSourceUrl>
+    <iconUrl>https://raw.githubusercontent.com/Toyin5/copyx/main/chocolatey/icon.svg</iconUrl>
+    <releaseNotes>https://github.com/Toyin5/copyx/releases</releaseNotes>
     <summary>A terminal file and directory copy utility with progress visibility.</summary>
     <description>
 CopyX is a terminal file and directory copy utility with progress visibility, practical metrics, and readable terminal output.
