@@ -31,13 +31,13 @@ copyx <source> <destination> [--overwrite|--skip-existing] [--dry-run] [--verbos
 
 ### Options
 
-| Option | Description |
-| --- | --- |
-| `--overwrite` | Replace destination files when they already exist. |
-| `--skip-existing` | Skip destination files when they already exist. |
-| `--dry-run` | Show what would happen without writing files. |
-| `--verbose` | Print additional per-file copy details. |
-| `--help`, `-h` | Show usage information. |
+| Option            | Description                                        |
+| ----------------- | -------------------------------------------------- |
+| `--overwrite`     | Replace destination files when they already exist. |
+| `--skip-existing` | Skip destination files when they already exist.    |
+| `--dry-run`       | Show what would happen without writing files.      |
+| `--verbose`       | Print additional per-file copy details.            |
+| `--help`, `-h`    | Show usage information.                            |
 
 `--overwrite` and `--skip-existing` cannot be used together.
 
@@ -87,12 +87,12 @@ copyx .\photos .\archive\photos --verbose
 
 ## Exit Codes
 
-| Code | Meaning |
-| --- | --- |
-| `0` | Copy completed successfully, or help was shown. |
-| `1` | Invalid arguments or a startup error occurred. |
-| `2` | The run completed, but one or more files failed to copy. |
-| `130` | The operation was cancelled. |
+| Code  | Meaning                                                  |
+| ----- | -------------------------------------------------------- |
+| `0`   | Copy completed successfully, or help was shown.          |
+| `1`   | Invalid arguments or a startup error occurred.           |
+| `2`   | The run completed, but one or more files failed to copy. |
+| `130` | The operation was cancelled.                             |
 
 ## Development
 
@@ -128,7 +128,7 @@ Install CopyX with Chocolatey:
 choco install copyx --version=1.0.0
 ```
 
-## Homebrew
+<!-- ## Homebrew
 
 CopyX includes a Homebrew formula template and generator for tap packaging.
 
@@ -140,7 +140,7 @@ Generate a formula for a tagged release:
 
 The completed formula is written to `artifacts\homebrew\copyx.rb`. Copy it into
 your tap, then run `brew audit`, `brew install --build-from-source`, and
-`brew test`.
+`brew test`. -->
 
 ## Local Tool Package
 
